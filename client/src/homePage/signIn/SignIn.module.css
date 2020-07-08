@@ -1,0 +1,47 @@
+* {
+  color: white;
+}
+.Container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 100px;
+  padding: 1.5rem;
+  justify-content: space-between;
+  height: 18%;
+}
+
+.UserNameLabel {
+  font-size: 0.875rem;
+  position: absolute;
+  top: 2px;
+}
+.RoomLabel {
+  font-size: 0.875rem;
+  position: absolute;
+  top: 68px;
+}
+
+.SignInButton {
+  color: #7f53ac;
+  font-size: 1.1em;
+}
+.SelectField {
+  color: #7f53ac;
+}
+.InputField,
+.SelectField,
+.SignInButton {
+  width: 250px;
+  height: 1.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+@media (min-width: 500px) {
+  .InputField,
+  .SelectField,
+  .SignInButton {
+    width: 500px;
+  }
+}
