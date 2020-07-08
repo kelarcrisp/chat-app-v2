@@ -1,0 +1,31 @@
+.Container {
+  width: 20vw;
+  height: 100vh;
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  animation: openContainer 1s ease;
+}
+.HiddenContainer {
+  width: 20vw;
+  height: 100vh;
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  animation: closeContainer 1s ease forwards;
+}
+@keyframes openContainer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes closeContainer {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
