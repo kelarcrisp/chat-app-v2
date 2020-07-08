@@ -1,0 +1,23 @@
+.Container {
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #647dee;
+  background-image: linear-gradient(215deg, #7f53ac 0%, #647dee 74%);
+}
+.InputField {
+  height: 2.5rem;
+  width: 80%;
+}
+.SubmitButton {
+  height: 45px;
+  width: 50px;
+  background-color: #647dee;
+  border-radius: 25%;
+  border: none;
+  margin-left: -40px;
+  opacity: 1;
+  color: white;
+  font-weight: bold;
+}

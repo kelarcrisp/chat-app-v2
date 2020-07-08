@@ -1,0 +1,12 @@
+.Container {
+  margin: 0;
+  color: black;
+  height: 70vh;
+  margin: auto;
+  box-sizing: border-box;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: scroll;
+}

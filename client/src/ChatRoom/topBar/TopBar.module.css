@@ -19,4 +19,6 @@
   border: none;
   padding: 0.5rem;
   border-radius: 5px;
+  opacity: 0.8;
+  font-weight: bold;
 }

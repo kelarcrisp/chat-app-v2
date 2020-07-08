@@ -28,7 +28,10 @@ const SideBar = () => {
   );
   return (
     <>
-      <button onClick={() => setShowSideBar(lastState => !lastState)}>
+      <button
+        className={classes.ToggleButton}
+        onClick={() => setShowSideBar(lastState => !lastState)}
+      >
         {" "}
         #
       </button>
