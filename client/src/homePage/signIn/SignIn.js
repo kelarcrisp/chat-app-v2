@@ -20,7 +20,7 @@ const SignIn = () => {
       setUserNameError("Username must be > 0 characters ");
     } else {
       setUserNameError("");
-      history.push("/chatroom");
+      history.push("/chatroom", userName);
     }
   };
   return (
@@ -36,10 +36,8 @@ const SignIn = () => {
         />
 
         <label className={classes.RoomLabel}>Chat rooms currently online</label>
-        <select className={classes.SelectField}>
-          <option value="javascript" selected>
-            Javascript
-          </option>
+        <select className={classes.SelectField} defaultValue="Javscript">
+          <option value="javascript">Javascript</option>
           <option value="value2">Value 2</option>
           <option value="value3">Value 3</option>
         </select>

@@ -1,12 +1,52 @@
-.Container {
-  margin: 0;
+*{
   color: black;
-  height: 70vh;
-  margin: auto;
-  box-sizing: border-box;
-  width: 70vw;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  overflow: scroll;
+}
+.FormInfoDisplayContainer {
+    height: 70vh;
+    margin: auto;
+    box-sizing: border-box;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overFlow: scroll;
+    position: relative;
+}
+
+.TextConvo{
+      margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.MyLabel{
+  margin-left: 50%;
+  font-size: 14px;
+}
+.MyText{
+      list-style-type: none;   
+    color: black;
+  background: rgb(0, 120, 254);
+    /* background-attachment: fixed; */
+    border-radius: 20px;
+    padding: 8px 15px; 
+  margin-left: 50%;
+}
+
+.TheirLabel{
+     margin-right: 45%;
+    padding: 8px 15px;    
+    display: inline-block;
+    align-items: flex-start;
+    color:black;
+}
+.TheirText{
+    margin-right: 45%;
+    border-radius: 20px;
+    padding: 8px 15px;    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    align-items: flex-start;
+    background: #EEE;
 }

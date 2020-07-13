@@ -9,6 +9,7 @@
 .InputField {
   height: 2.5rem;
   width: 80%;
+  color: black;
 }
 .SubmitButton {
   height: 45px;
