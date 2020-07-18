@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import classes from "./SignIn.module.css";
 import io from "socket.io-client";
+import { CRoomContext } from "../../context/ChatRoomContext";
 const SignIn = () => {
   const [userName, setUserName] = useState("");
   const [userNameError, setUserNameError] = useState("");
+  const { newestState, dispatch } = useContext(CRoomContext);
   const history = useHistory();
   // useEffect(() => {
   //   const socket = io("http://localhost:5000");
@@ -20,6 +22,10 @@ const SignIn = () => {
       setUserNameError("Username must be > 0 characters ");
     } else {
       setUserNameError("");
+      dispatch({
+        type: "ADD_USER",
+        payload: { newUser: userName }
+      });
       history.push("/chatroom", userName);
     }
   };
@@ -35,7 +41,7 @@ const SignIn = () => {
           onChange={event => setUserName(event.target.value)}
         />
 
-        <label className={classes.RoomLabel}>Chat rooms currently online</label>
+        {/* <label className={classes.RoomLabel}>Chat rooms currently online</label> */}
         <select className={classes.SelectField} defaultValue="Javscript">
           <option value="javascript">Javascript</option>
           <option value="value2">Value 2</option>

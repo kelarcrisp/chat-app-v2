@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import classes from "./SideBar.module.css";
+import ActiveUsers from './ActiveUsers/ActiveUsers';
 const SideBar = () => {
   const [showSideBar, setShowSideBar] = useState(true);
   const visibleSideBar = (
     <div className={classes.Container}>
       <h2 style={{ margin: 0 }}>'ROOM NAME': </h2>
       <div>/*current room*/</div>
-      <div>/*Users * /</div>
+      <ActiveUsers />
       <ul>
         <li>test1</li>
         <li>test2</li>
